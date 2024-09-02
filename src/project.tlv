@@ -63,9 +63,9 @@
                      ($op == 2'b10) ? $prod :
                                       $quot;
          
-         m5+sseg_decoder($segments, $out[3:0])
-         *uo_out = {1'b0, ~$segments};
-         /**
+         //m5+sseg_decoder($segments, $out[3:0])
+         //*uo_out = {1'b0, ~$segments};
+         
          $digit[3:0] = $out[3:0];
          *uo_out =
             $digit == 4'h0 ? 8'b00111111 :
@@ -84,7 +84,7 @@
             $digit == 4'hD ? 8'b01011110 :
             $digit == 4'hE ? 8'b01111001 :
                              8'b01110001;
-         **/
+         
    
    // Note that pipesignals assigned here can be found under /fpga_pins/fpga.
    
@@ -93,8 +93,8 @@
    
    // Connect Tiny Tapeout outputs. Note that uio_ outputs are not available in the Tiny-Tapeout-3-based FPGA boards.
    //*uo_out = 8'b0;
-   m5_if_neq(m5_target, FPGA, ['*uio_out = 8'b0;'])
-   m5_if_neq(m5_target, FPGA, ['*uio_oe = 8'b0;'])
+   //m5_if_neq(m5_target, FPGA, ['*uio_out = 8'b0;'])
+   //m5_if_neq(m5_target, FPGA, ['*uio_oe = 8'b0;'])
 
 // Set up the Tiny Tapeout lab environment.
 \TLV tt_lab()
