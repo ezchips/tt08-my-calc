@@ -99,11 +99,11 @@
 // Set up the Tiny Tapeout lab environment.
 \TLV tt_lab()
    // Connect Tiny Tapeout I/Os to Virtual FPGA Lab.
-   m5+tt_connections()
+   //m5+tt_connections()
    // Instantiate the Virtual FPGA Lab.
-   m5+board(/top, /fpga, 7, $, , my_design)
+   //m5+board(/top, /fpga, 7, $, , my_design)
    // Label the switch inputs [0..7] (1..8 on the physical switch panel) (top-to-bottom).
-   m5+tt_input_labels_viz(['"UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED"'])
+   //m5+tt_input_labels_viz(['"UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED"'])
 
 \SV
 
