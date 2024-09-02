@@ -58,8 +58,9 @@
                      ($op == 2'b10) ? $prod :
                                       $quot;
          
-         //m5+sseg_decoder($segments, $out[3:0])
-         //*uo_out = {1'b0, ~$segments};
+         m5+sseg_decoder($segments, $out[3:0])
+         *uo_out = {1'b0, ~$segments};
+         /**
          $digit[3:0] = $out[3:0];
          *uo_out =
             $digit == 4'h0 ? 8'b00111111 :
@@ -78,6 +79,7 @@
             $digit == 4'hD ? 8'b01011110 :
             $digit == 4'hE ? 8'b01111001 :
                              8'b01110001;
+         **/
          
 \SV
 
