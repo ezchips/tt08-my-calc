@@ -171,7 +171,7 @@ module m5_user_module_name (
 
 \TLV
    /* verilator lint_off UNOPTFLAT */
-   m5_if(m5_in_fpga, ['m5+tt_lab()'], ['m5+my_design()'])
+   //m5_if(m5_in_fpga, ['m5+tt_lab()'], ['m5+my_design()'])
 
 \SV_plus
    
