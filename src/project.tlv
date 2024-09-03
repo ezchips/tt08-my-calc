@@ -146,7 +146,7 @@ module m5_user_module_name (
    //m5+tt_connections()
    
    // Instantiate the Virtual FPGA Lab.
-   m5+board(/top, /fpga, 7, $, , my_design)
+   //m5+board(/top, /fpga, 7, $, , my_design)
    // Label the switch inputs [0..7] (1..8 on the physical switch panel) (bottom-to-top).
    //m5+tt_input_labels_viz(['"UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED", "UNUSED"'])
    
