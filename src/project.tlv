@@ -25,7 +25,7 @@
    
    // Include Tiny Tapeout Lab.
    m4_include_lib(['https:/']['/raw.githubusercontent.com/os-fpga/Virtual-FPGA-Lab/35e36bd144fddd75495d4cbc01c4fc50ac5bde6f/tlv_lib/tiny_tapeout_lib.tlv'])
-   //`default_nettype wire;
+   `default_nettype wire
 
 \TLV my_design()
    
@@ -82,7 +82,6 @@
                              8'b01110001;
          
 \SV
-`default_nettype wire;
 
 // ================================================
 // A simple Makerchip Verilog test bench driving random stimulus.
