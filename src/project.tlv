@@ -82,7 +82,7 @@
                              8'b01110001;
          
 \SV
-
+`default_nettype wire;
 
 // ================================================
 // A simple Makerchip Verilog test bench driving random stimulus.
